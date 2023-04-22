@@ -16,8 +16,8 @@ public class BlackSmith {
     public static void main(String[] args) {
         
         //1 declaring interger variables
-        int numberofDays,daggersPerDay = 3,totalnumberOfDaggers;
-        double numberOfPairs;
+        int numberofDays,daggersPerDay = 3,totalnumberOfDaggers,numberOfPairs,daggersRemaining;
+        
         
         //2 initializing a scanner object
         Scanner scanner = new Scanner(System.in);
@@ -31,9 +31,15 @@ public class BlackSmith {
         
         //calculating the number of pairs
         numberOfPairs = (int) (totalnumberOfDaggers/2);
+        
+        //calculating the remainder of pairs and showing the remainder
+        
+        daggersRemaining = totalnumberOfDaggers % 2;
       
         //displaying number of full dagger pairs made and if there is an extra dagger
-        System.out.println( totalnumberOfDaggers+ " daggers have " +numberOfPairs+ " pairs"+ "and an extra"+"");
+        System.out.println( totalnumberOfDaggers+ " daggers have " +numberOfPairs+ " pairs "+ "and an extra "+daggersRemaining+"");
+        
+       
        
     }
     //calling a method and parameters 
